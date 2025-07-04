@@ -6,9 +6,9 @@ import joblib
 import sklearn 
 
 # Load model and encoders
-model = joblib.load("model.pkl")
-encoders = joblib.load("encoder.pkl")
-scaler = joblib.load("scaler.pkl")
+model = joblib.load("models/model.pkl")
+encoders = joblib.load("models/encoder.pkl")
+scaler = joblib.load("models/scaler.pkl")
 
 
 st.title("🧠 Agent Performance Optimization Engine")
