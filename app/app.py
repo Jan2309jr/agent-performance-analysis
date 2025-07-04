@@ -3,11 +3,13 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import sklearn 
 
 # Load model and encoders
-model = joblib.load("app/model.pkl")
-encoders = joblib.load("app/encoder.pkl")
-scaler = joblib.load("app/scaler.pkl")
+model = joblib.load("model.pkl")
+encoders = joblib.load("encoder.pkl")
+scaler = joblib.load("scaler.pkl")
+
 
 st.title("🧠 Agent Performance Optimization Engine")
 st.write("Predict if a support agent is a High or Low performer.")
